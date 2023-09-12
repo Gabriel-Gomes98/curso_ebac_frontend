@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário EBAC</title>
-    <link rel="stylesheet" href="/exercicio_html_js/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <main>
@@ -12,6 +12,7 @@
         <form id="formulario-analise">
             <label for="nome">Nome</label>
             <input id="nome" type="text" name="nome" required placeholder="Nome">
+            <p id="aviso"></p>
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required placeholder="Email">
             <label for="numero-a">Digite um número</label>
@@ -20,8 +21,9 @@
             <input id="numero-b" type="number" name="numero-b" required placeholder="Campo B - Digite um número">
             <button id="button-analise" type="submit">Enviar</button>
         </form>
-        <p id="messagem"></p>
+        <p id="mensagem-erro"></p>
+        <p class="mensagem-sucesso"></p>
     </main>
-    <script src="/exercicio_html_js/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
