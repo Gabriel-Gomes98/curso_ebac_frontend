@@ -1,0 +1,76 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0;
+}
+
+/* Título */
+
+h1 {
+    font-size: 3.6rem;
+    padding: 2rem 0;
+}
+
+/* Form */
+
+form {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: none;
+}
+
+input {
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.8rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#botao-cadastrar {
+    background-color: #04b604;
+}
+
+#botao-cadastrar:hover {
+    background-color: #027502;
+    color: #ffffff;
+}
+
+#botao-limpar {
+    background-color: #ff0000;
+}
+
+#botao-limpar:hover {
+    background-color: #af0202;
+    color: #ffffff;
+}
+
+/* Lista */
+
+li {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
