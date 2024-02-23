@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    /* Variáveis */
+
+:root {
+    --fonte: 'Inter', sans-serif;
+    --cor-principal: #4A555E;
+    --cor-secundaria: #ccc;
+    --cor-titulo-links: #fff;
+    --cor-button-hover: #777c81;
+}
+
+    /* Reset */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+    /* Header */
+
+header {
+    background-color: var(--cor-principal);
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.container_nav h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--cor-titulo-links);
+}
+
+.mobile_nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile_nav-list {
+    background-color: var(--cor-principal);
+    padding-top: 2rem;
+}
+
+.mobile_nav-list {
+    display: none;
+}
+
+.mobile_nav-list li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.nav_list-link {
+    text-decoration: none;
+    color: var(--cor-titulo-links);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav_list-link:hover {
+    color: var(--cor-secundaria);
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* Main */
+
+.container_section {
+    padding: 6rem 1.5rem;
+}
+
+.section_product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_about h2, 
+.container_section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+    padding: 2.2rem 0 1rem;
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+.container_img {
+    display: flex;
+    justify-content: center;
+}
+
+.store_img,
+.product_img {
+    max-width: 70%;
+    height: auto;
+}
+
+.section_product h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+}
+
+.section_about p,
+.product_description {
+    font-size: 1.4rem;
+    padding-top: 3rem;
+}
+
+.button_addtobasket {
+    background-color: var(--cor-principal);
+    color: var(--cor-titulo-links);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 4rem 0 10rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+.button_addtobasket:hover {
+    background-color: var(--cor-button-hover);
+    cursor: pointer;
+}
