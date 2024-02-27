@@ -1,0 +1,13 @@
+@use '../config/reset';
+
+@media screen and (max-width: 767px) {
+    .container {
+        & .products {
+            display: block;
+    
+            & .product-item  {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

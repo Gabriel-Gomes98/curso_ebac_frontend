@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: variaveis.$font;
+}
+
+body {
+    background-color: variaveis.$corFundoBody;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
