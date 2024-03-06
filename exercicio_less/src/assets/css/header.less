@@ -1,0 +1,36 @@
+@import './maps.less';
+
+header {
+    background-color: #colors[backgroundColorHeader];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+.container {
+    .menu {
+        display: flex;
+    }
+}
+
+.menu {
+    & li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+    }
+
+
+}
